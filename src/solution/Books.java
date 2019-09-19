@@ -1,5 +1,7 @@
 package solution;
 
+import java.util.Scanner;
+
 public class Books {
     private String bookName;
     private String authorName;
@@ -41,3 +43,12 @@ public class Books {
                 ("Book Name: " + bookName + "\nAuthor Name: " + authorName + "\nISBN: " + ISBN);
     }
 }
+
+class Test {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        String bookName[] = new String[n];
+        String authorName[] = new String[n];
+        long ISBN[] = new long[n];
+        scan.nextLine();
