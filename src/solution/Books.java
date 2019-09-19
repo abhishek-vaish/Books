@@ -29,3 +29,9 @@ public class Books {
         this.ISBN = ISBN;
     }
 
+    public void Books(String BookName, String AuthorName, long ISBN) {
+        this.bookName = BookName;
+        this.authorName = AuthorName;
+        this.ISBN = ISBN;
+    }
+
