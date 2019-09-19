@@ -35,3 +35,9 @@ public class Books {
         this.ISBN = ISBN;
     }
 
+    @Override
+    public String toString() {
+        return
+                ("Book Name: " + bookName + "\nAuthor Name: " + authorName + "\nISBN: " + ISBN);
+    }
+}
