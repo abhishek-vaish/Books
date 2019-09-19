@@ -52,3 +52,21 @@ class Test {
         String authorName[] = new String[n];
         long ISBN[] = new long[n];
         scan.nextLine();
+        if (n == 0) {
+            System.out.println("N/A");
+        } else {
+            for (int i = 0; i < n; i++) {
+                bookName[i] = scan.nextLine();
+                authorName[i] = scan.nextLine();
+                ISBN[i] = scan.nextLong();
+                scan.nextLine();
+            }
+        }
+        for (int j = 0; j < n; j++) {
+            System.out.println("-------------------------------");
+            System.out.println("Book Name: " + bookName[j] + "\nAuthor Name: " + authorName[j] + "\nISBN: " + ISBN[j]);
+            System.out.println("-------------------------------");
+        }
+    }
+}
+
